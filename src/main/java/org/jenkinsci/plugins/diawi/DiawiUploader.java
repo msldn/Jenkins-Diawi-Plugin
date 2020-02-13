@@ -65,7 +65,7 @@ public class DiawiUploader extends hudson.tasks.Builder implements SimpleBuildSt
 
             DiawiRequest.DiawiJobStatus S = job.getStatus(token);
 
-            int max_trials=30;
+            int max_trials=3000;
             int i=0;
 
             while (S.status ==2001 && i<max_trials)
